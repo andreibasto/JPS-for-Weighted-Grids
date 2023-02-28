@@ -17,7 +17,7 @@ def is_blocked(n):
     return outside(n) or grid[n[0]][n[1]] == OBSTACLE
 
 def outside(n):
-    return n[0] < 0 or n[1] < 0 or n[0] >= width or n[1] >= height
+    return n[0] < 0 or n[1] < 0 or n[0] >= height or n[1] >= width
 
 def step(x, d):
     return (x[0] + d[0], x[1] + d[1])
